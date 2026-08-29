@@ -8,7 +8,11 @@
 
 ## Github Statistics :bar_chart:
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ru0k3&hide_border=false&show_icons=true&theme=transparent&hide=issues&rank_icon=github&cache_seconds=21600" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=ru0k3&amp;hide_border=false&amp;show_icons=true&amp;theme=github_dark&amp;hide=issues&amp;rank_icon=github&amp;cache_seconds=21600" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=ru0k3&amp;hide_border=false&amp;show_icons=true&amp;theme=default&amp;hide=issues&amp;rank_icon=github&amp;cache_seconds=21600" />
+    <img alt="Ru0k3's GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=ru0k3&amp;hide_border=false&amp;show_icons=true&amp;theme=github_dark&amp;hide=issues&amp;rank_icon=github&amp;cache_seconds=21600" />
+  </picture>
 </p>
 
 ## Contact :
