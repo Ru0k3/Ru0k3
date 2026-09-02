@@ -6,24 +6,6 @@
   </picture>
 </div>
 
-## About Me
-| Field | Details |
-| --- | --- |
-| Name | Rama Krishna |
-| Role | Student |
-| Location | Amritapuri |
-| Status | Go with the flow |
-| Education | Amrita Vishwa Vidyapeetham, Amritapuri |
-| Programming | Java, C++, C, Python, Go |
-| Frontend | Flutter/Dart, JavaScript, HTML, CSS |
-| Backend | JavaScript, Java, Go |
-| Databases | PostgreSQL, MySQL, Supabase |
-| Cloud / Infrastructure | Google Cloud, Fly.io, AWS |
-| Tools | VS Code, Android Studio |
-| Languages | Telugu, English |
-| Interests | CTFs, open-source tools, AI models, and device tinkering |
-| Portfolio | [ru0k3.github.io/portfolio](https://ru0k3.github.io/portfolio/) |
-
 ## GitHub Statistics
 <div align="center">
   <img width="100%" src="https://streak-stats.demolab.com/?user=Ru0k3&hide_border=true&background=0A101F&stroke=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=22D3EE&card_width=1180" alt="Ru0k3's GitHub contribution streak" />
