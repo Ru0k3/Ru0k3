@@ -12,6 +12,8 @@
   <br />
   <img width="49%" src="https://ru0k3-github-readme-stats.vercel.app/api?username=Ru0k3&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="Ru0k3's GitHub statistics" />
   <img width="49%" src="https://ru0k3-github-readme-stats.vercel.app/api/top-langs/?username=Ru0k3&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="Ru0k3's top programming languages" />
+  <br />
+  <img width="100%" src="https://raw.githubusercontent.com/Ru0k3/Ru0k3/main/profile-stats.svg" alt="Daily live GitHub profile telemetry" />
 </div>
 
 > `hide_rank=true` is intentional: the rank is strongly influenced by stars and followers, so it is not a reliable measure for a newer profile.

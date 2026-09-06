@@ -1,0 +1,44 @@
+name: Weekly Profile Health Report
+
+on:
+  schedule:
+    - cron: "19 8 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: weekly-profile-health
+  cancel-in-progress: true
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate weekly report
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_profile_health.py
+
+      - name: Commit weekly report if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add PROFILE_HEALTH.md
+          if git diff --cached --quiet; then
+            echo "No report changes detected."
+            exit 0
+          fi
+          git commit -m "Weekly profile health report [skip ci]"
+          git push
