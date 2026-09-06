@@ -16,9 +16,6 @@
   <img width="100%" src="https://raw.githubusercontent.com/Ru0k3/Ru0k3/main/profile-stats.svg" alt="Daily live GitHub profile telemetry" />
 </div>
 
-> `hide_rank=true` is intentional: the rank is strongly influenced by stars and followers, so it is not a reliable measure for a newer profile.
->
-
 ## Contribution Activity
 <div align="center">
   <picture>
