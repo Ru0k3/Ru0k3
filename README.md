@@ -1,8 +1,8 @@
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ru0k3/Ru0k3/main/dark_mode.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ru0k3/Ru0k3/main/light_mode.svg" />
-    <img alt="Ru0k3's GitHub profile" src="https://raw.githubusercontent.com/Ru0k3/Ru0k3/main/light_mode.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ru0k3/Ru0k3/main/dark_mode.png" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ru0k3/Ru0k3/main/light_mode.png" />
+    <img alt="Ru0k3's GitHub profile" src="https://raw.githubusercontent.com/Ru0k3/Ru0k3/main/light_mode.png" />
   </picture>
 </div>
 
