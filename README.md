@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.gitskins.com/api/section/hero?username=ru0k3&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F229377865%3Fu%3Dd01c69023c69b1bae084899dbb6d9b090f200a67%26v%3D4" alt="ru0k3 hero visual" />
+  <img src="./living-identity.svg" alt="Krishna — living identity hero" />
 </p>
 
 ## The city I built this year
