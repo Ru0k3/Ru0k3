@@ -1,0 +1,46 @@
+name: Update Living Identity Hero
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: living-identity
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Refresh hero from live profile data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_living_identity.py
+
+      - name: Commit hero if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add living-identity.svg
+          if git diff --cached --quiet; then
+            echo "Hero already up to date."
+            exit 0
+          fi
+          git commit -m "Refresh living identity hero [skip ci]"
+          git push
