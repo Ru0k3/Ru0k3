@@ -1,30 +1,33 @@
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ru0k3/Ru0k3/main/dark_mode.png" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ru0k3/Ru0k3/main/light_mode.png" />
-    <img alt="Ru0k3's GitHub profile" src="https://raw.githubusercontent.com/Ru0k3/Ru0k3/main/light_mode.png" />
-  </picture>
-</div>
+<p align="center">
+  <img src="https://www.gitskins.com/api/section/hero?username=ru0k3&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F229377865%3Fu%3Dd01c69023c69b1bae084899dbb6d9b090f200a67%26v%3D4" alt="ru0k3 hero visual" />
+</p>
 
-## GitHub Statistics
-<div align="center">
-  <img width="100%" src="https://streak-stats.demolab.com/?user=Ru0k3&hide_border=true&background=0A101F&stroke=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=22D3EE&card_width=1180" alt="Ru0k3's GitHub contribution streak" />
-  <br />
-  <img width="49%" src="https://ru0k3-github-readme-stats.vercel.app/api?username=Ru0k3&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="Ru0k3's GitHub statistics" />
-  <img width="49%" src="https://ru0k3-github-readme-stats.vercel.app/api/top-langs/?username=Ru0k3&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="Ru0k3's top programming languages" />
-  <br />
-  <img width="100%" src="https://raw.githubusercontent.com/Ru0k3/Ru0k3/main/profile-stats.svg" alt="Daily live GitHub profile telemetry" />
-</div>
+## The city I built this year
 
-## Contribution Activity
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ru0k3/Ru0k3/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ru0k3/Ru0k3/output/github-snake.svg" />
-    <img alt="Snake eating Ru0k3's contributions" src="https://raw.githubusercontent.com/Ru0k3/Ru0k3/output/github-snake.svg" />
+<p align="center">
+  <img src="https://www.gitskins.com/api/section/city?username=ru0k3&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F229377865%3Fu%3Dd01c69023c69b1bae084899dbb6d9b090f200a67%26v%3D4" alt="ru0k3 city visual" />
+</p>
 
-## Portfolio
-[Visit my portfolio](https://ru0k3.github.io/portfolio/)
+<p align="center"><sub>Every building is a day; taller means more contributions.</sub></p>
 
-## Contact
-<div align="center"><a href="https://www.linkedin.com/in/venkata-rama-krishna-dulam-302637378/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>&nbsp;&nbsp;<a href="https://www.instagram.com/r._krishna_21/"><img src="https://img.shields.io/badge/Instagram-0A101F?style=for-the-badge&logo=instagram&logoColor=A78BFA&labelColor=0A101F" alt="Instagram" /></a>&nbsp;&nbsp;<a href="https://discord.com/users/1395071225859932222"><img src="https://img.shields.io/badge/Discord-0A101F?style=for-the-badge&logo=discord&logoColor=22D3EE&labelColor=0A101F" alt="Discord" /></a>&nbsp;&nbsp;<a href="mailto:ramakrishnadulam10@gmail.com"><img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" /></a></div>
+## Population
+
+<p align="center">
+  <img src="https://www.gitskins.com/api/section/stats?username=ru0k3&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F229377865%3Fu%3Dd01c69023c69b1bae084899dbb6d9b090f200a67%26v%3D4" alt="ru0k3 stats visual" />
+</p>
+
+## Landmarks
+
+<p align="center">
+  <img src="https://www.gitskins.com/api/section/projects?username=ru0k3&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F229377865%3Fu%3Dd01c69023c69b1bae084899dbb6d9b090f200a67%26v%3D4" alt="ru0k3 projects visual" />
+</p>
+
+## Visit
+
+<p align="center">
+  <img src="https://www.gitskins.com/api/section/social?username=ru0k3&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F229377865%3Fu%3Dd01c69023c69b1bae084899dbb6d9b090f200a67%26v%3D4&website=ru0k3.github.io%2Fportfolio%2F&linkedin=venkata-rama-krishna-dulam-302637378&instagram=r._krishna_21&email=ramakrishnadulam10%40gmail.com" alt="ru0k3 social visual" />
+</p>
+
+<p align="center"><a href="https://github.com/Ru0k3">GitHub</a> · <a href="https://ru0k3.github.io/portfolio/">Portfolio</a> · <a href="https://www.linkedin.com/in/venkata-rama-krishna-dulam-302637378/">LinkedIn</a> · <a href="https://www.instagram.com/r._krishna_21/">Instagram</a> · <a href="mailto:ramakrishnadulam10@gmail.com">Email</a></p>
+
+<p align="center"><sub>Krishna · Contribution city generated with <a href="https://www.gitskins.com/readme-generator">GitSkins</a></sub></p>
