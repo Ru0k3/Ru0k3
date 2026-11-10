@@ -9,7 +9,6 @@
 @keyframes orbit{to{transform:rotate(360deg)}}
 @keyframes breathe{50%{opacity:.35}}
 .portrait{animation:arrive 16s ease-in-out infinite}.name{animation:name 16s ease-in-out infinite}.scan{animation:scan 16s linear infinite}.orbit{transform-origin:790px 250px;animation:orbit 48s linear infinite}.pulse{animation:breathe 5s ease-in-out infinite}
-.portrait,.name{animation:none}
 @media(prefers-reduced-motion:reduce){.portrait,.name,.scan,.orbit,.pulse{animation:none}.scan{display:none}}
 </style>
 <rect width="1000" height="570" rx="24" fill="#06110f"/><rect x="1" y="1" width="998" height="568" rx="23" fill="url(#grid)" stroke="#2dd4bf" stroke-opacity=".3"/>
