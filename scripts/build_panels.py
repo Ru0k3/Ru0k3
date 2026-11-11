@@ -216,7 +216,7 @@ def projects_svg(repos: list[dict]) -> str:
             f'stroke="{TEAL}" stroke-opacity=".2"/>',
             text(cut(repo["name"], 32), x + 18, y + 36, 17, TEXT, family=SANS, weight=700),
         ]
-        for offset, chunk in enumerate(wrap(description, 52, 2)):
+        for offset, chunk in enumerate(wrap(description, 48, 2)):
             lines.append(text(chunk, x + 18, y + 60 + offset * 16, 12, MUTED))
         pill = repo.get("language") or "code"
         pill_width = 12 + 7.2 * len(pill)
