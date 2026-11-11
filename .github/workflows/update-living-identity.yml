@@ -1,4 +1,4 @@
-name: Update Living Identity Hero
+name: Update Profile Panels
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: living-identity
+  group: profile-panels
   cancel-in-progress: true
 
 jobs:
@@ -33,14 +33,19 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_living_identity.py
 
-      - name: Commit hero if changed
+      - name: Rebuild panels from live profile data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/build_panels.py
+
+      - name: Commit panels if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add living-identity.svg
+          git add living-identity.svg panels
           if git diff --cached --quiet; then
-            echo "Hero already up to date."
+            echo "Panels already up to date."
             exit 0
           fi
-          git commit -m "Refresh living identity hero [skip ci]"
+          git commit -m "Refresh profile panels [skip ci]"
           git push
