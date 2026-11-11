@@ -42,6 +42,9 @@ def main() -> None:
 
     for old, new in RECOLOR.items():
         svg = svg.replace(old, new)
+    if "pro preview" in svg.lower():
+        print("source panel is watermarked; keeping existing SVG")
+        return
     if "#2dd4bf" not in svg or "#3178c6" in svg:
         raise SystemExit("recolor check failed; keeping existing SVG")
 
