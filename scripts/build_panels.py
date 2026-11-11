@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 import math
 import os
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -261,6 +262,25 @@ def social_svg(links: list[tuple[str, str]]) -> str:
     return "\n".join(lines + ["</svg>"])
 
 
+HERO = ROOT / "living-identity.svg"
+
+
+def refresh_hero(values: dict[str, int]) -> bool:
+    """Keep the committed hero panel's stat row in sync with live numbers."""
+    if not HERO.exists():
+        return False
+    svg = original = HERO.read_text()
+    for name, value in values.items():
+        pattern = rf'(>{name}</text><text y="38" fill="#e6fdf6" font-size="28">)\d+'
+        svg = re.sub(pattern, lambda m: m.group(1) + str(value), svg)
+    desc = ", ".join(f"{name.title()}: {value}" for name, value in values.items())
+    svg = re.sub(r"(<desc>.*?)(REPOSITORIES: \d+.*?FOLLOWERS: \d+)", lambda m: m.group(1) + desc, svg)
+    if svg == original:
+        return False
+    HERO.write_text(svg)
+    return True
+
+
 def main() -> None:
     owner = os.environ.get("GITHUB_REPOSITORY_OWNER") or os.environ.get("PROFILE_OWNER")
     token = os.environ.get("GITHUB_TOKEN")
@@ -293,6 +313,12 @@ def main() -> None:
         ("Instagram", "@r._krishna_21"),
         ("Email", "ramakrishnadulam10@gmail.com"),
     ]
+    values = {
+        "REPOSITORIES": int(user.get("public_repos", 0)),
+        "STARS": stars,
+        "CONTRIBUTIONS": int(calendar["totalContributions"]),
+        "FOLLOWERS": int(user.get("followers", 0)),
+    }
     panels = {
         "city.svg": city_svg(calendar, owner),
         "stats.svg": stats_svg(
@@ -315,6 +341,8 @@ def main() -> None:
             continue
         target.write_text(svg)
         changed.append(name)
+    if refresh_hero(values):
+        changed.append("living-identity.svg")
     print(f"panels updated: {', '.join(changed) if changed else 'none'}")
 
 
