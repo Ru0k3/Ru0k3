@@ -273,8 +273,8 @@ def refresh_hero(values: dict[str, int]) -> bool:
     for name, value in values.items():
         pattern = rf'(>{name}</text><text y="38" fill="#e6fdf6" font-size="28">)\d+'
         svg = re.sub(pattern, lambda m: m.group(1) + str(value), svg)
-    desc = ", ".join(f"{name.title()}: {value}" for name, value in values.items())
-    svg = re.sub(r"(<desc>.*?)(REPOSITORIES: \d+.*?FOLLOWERS: \d+)", lambda m: m.group(1) + desc, svg)
+    desc = ", ".join(f"{name.capitalize()}: {value}" for name, value in values.items())
+    svg = re.sub(r"<desc>[^<]*</desc>", lambda _: f"<desc>{desc}</desc>", svg, count=1)
     if svg == original:
         return False
     HERO.write_text(svg)
